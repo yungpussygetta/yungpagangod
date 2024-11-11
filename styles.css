@@ -160,6 +160,24 @@ body {
 	.title {
 		font-size: 3rem;
 	}
+
+	.merch-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		overflow: hidden; /* This keeps the zoomed image within bounds */
+	}
+	.merch-img {
+		width: 100%;
+		height: 20rem;
+		aspect-ratio: 16/9;
+		object-fit: contain;
+		cursor: pointer;
+		transition: transform 0.3s ease; /* Smooth transition for the zoom */
+	}
+	.merch-img:hover {
+		transform: scale(1.1); /* Increases image size by 10% on hover */
+	}
 }
 
 @media (min-width: 320px) {
@@ -181,6 +199,9 @@ body {
 	}
 	.title {
 		font-size: 3.5rem;
+	}
+	.merch-img {
+		height: 21rem;
 	}
 }
 
@@ -204,6 +225,9 @@ body {
 	.title {
 		font-size: 4rem;
 	}
+	.merch-img {
+		height: 23rem;
+	}
 }
 
 @media (min-width: 475px) {
@@ -226,6 +250,9 @@ body {
 	.title {
 		font-size: 4rem;
 	}
+	.merch-img {
+		height: 25rem;
+	}
 }
 
 @media (min-width: 560px) {
@@ -245,6 +272,9 @@ body {
 	.title {
 		font-size: 4.3rem;
 	}
+	.merch-img {
+		height: 25rem;
+	}
 }
 
 @media (min-width: 640px) {
@@ -260,6 +290,9 @@ body {
 	}
 	.bullet {
 		font-size: 2rem;
+	}
+	.merch-img {
+		height: 30rem;
 	}
 }
 
@@ -282,6 +315,13 @@ body {
 	.youtube-link {
 		font-size: 2.3rem;
 	}
+	.merch-container {
+		gap: 2rem;
+		flex-direction: row;
+	}
+	.merch-img {
+		height: 21rem;
+	}
 }
 @media (min-width: 1024px) {
 	.container {
@@ -296,6 +336,9 @@ body {
 	}
 	.title {
 		font-size: 5.2rem;
+	}
+	.merch-img {
+		height: 23rem;
 	}
 }
 @media (min-width: 1280px) {
