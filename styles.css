@@ -178,6 +178,28 @@ body {
 	.merch-img:hover {
 		transform: scale(1.1); /* Increases image size by 10% on hover */
 	}
+	.merch-link {
+		position: relative;
+		display: block;
+		overflow: hidden;
+	}
+
+	.caption {
+		position: absolute;
+		bottom: -100%;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		color: white;
+		padding: 1rem;
+		text-align: center;
+		transition: bottom 0.3s ease;
+		font-size: 1.6rem;
+	}
+
+	.merch-link:hover .caption {
+		bottom: 0;
+	}
 }
 
 @media (min-width: 320px) {
@@ -203,6 +225,9 @@ body {
 	.merch-img {
 		height: 21rem;
 	}
+	.caption {
+		font-size: 1.6rem;
+	}
 }
 
 @media (min-width: 375px) {
@@ -227,6 +252,9 @@ body {
 	}
 	.merch-img {
 		height: 23rem;
+	}
+	.caption {
+		font-size: 2rem;
 	}
 }
 
@@ -275,6 +303,9 @@ body {
 	.merch-img {
 		height: 25rem;
 	}
+	.caption {
+		font-size: 2.1rem;
+	}
 }
 
 @media (min-width: 640px) {
@@ -293,6 +324,9 @@ body {
 	}
 	.merch-img {
 		height: 30rem;
+	}
+	.caption {
+		font-size: 2.2rem;
 	}
 }
 
@@ -321,6 +355,10 @@ body {
 	}
 	.merch-img {
 		height: 21rem;
+	}
+
+	.caption {
+		font-size: 1.6rem;
 	}
 }
 @media (min-width: 1024px) {
@@ -369,6 +407,9 @@ body {
 	}
 	.youtube-link {
 		font-size: 2.5rem;
+	}
+	.caption {
+		font-size: 1.8rem;
 	}
 }
 
