@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(
+		to right top,
+		#8996e2,
+		#9391e5,
+		#9f8be6,
+		#ad83e5,
+		#bc7be2
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	margin-top: 2rem;
+}
+
+.title {
+	width: 100%;
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	letter-spacing: 0.2rem;
+	user-select: none;
+	text-align: center;
+}
+
+.modal {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+
+.music-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.music-text {
+	text-align: center;
+	color: black;
+	overflow: auto;
+	max-width: 100%;
+}
+
+.music-text pre {
+	font-size: 1vw;
+	line-height: 1.2;
+	white-space: pre;
+	font-family: monospace;
+	margin: 0;
+	width: fit-content;
+	display: inline-block;
+}
+
+.hyperlink-text {
+	margin: 0;
+	padding: 0;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	font-style: italic;
+	font-size: 2.5rem;
+}
+
+.music-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.bullet {
+	font-size: 2rem;
+}
+
+.youtube-video {
+	position: relative;
+	width: 100%;
+	padding-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.youtube-video iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+.youtube-link {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 1rem;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.youtube-modal-title {
+	margin-right: 1rem;
+}
+
+.youtube-svg {
+	height: 2rem;
+	width: 2rem;
+}
+
+/* new css to use to media queries */
+
+@media (min-width: 375px) {
+	.container {
+		max-width: 375px;
+		width: 350px;
+	}
+	.music-text pre {
+		font-size: 1rem;
+	}
+	.hyperlink-text {
+		font-size: 1.9rem;
+	}
+	.bullet {
+		font-size: 1.5rem;
+	}
+	.youtube-link {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 475px) {
+	.container {
+		max-width: 475px;
+		width: 400px;
+	}
+	.music-text pre {
+		font-size: 1.3vw;
+	}
+	.hyperlink-text {
+		font-size: 1.5rem;
+	}
+	.bullet {
+		font-size: 1.3rem;
+	}
+	.youtube-link {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 560px) {
+	.container {
+		max-width: 560px;
+		width: 480px;
+	}
+	.music-text pre {
+		font-size: 1.5vw;
+	}
+	.hyperlink-text {
+		font-size: 1.8rem;
+	}
+	.bullet {
+		font-size: 1.7rem;
+	}
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+		width: 550px;
+	}
+	.music-text pre {
+		font-size: 1.5vw;
+	}
+	.hyperlink-text {
+		font-size: 2.1rem;
+	}
+	.bullet {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		width: 640px;
+	}
+
+	.music-text pre {
+		font-size: 1.5vw;
+	}
+
+	.hyperlink-text {
+		font-size: 2.4rem;
+	}
+	.bullet {
+		font-size: 2rem;
+	}
+	.youtube-link {
+		font-size: 2.3rem;
+	}
+}
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+		width: 750px;
+	}
+	.hyperlink-text {
+		font-size: 2.5rem;
+	}
+	.bullet {
+		font-size: 2.2rem;
+	}
+}
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		width: 800px;
+	}
+	.hyperlink-text {
+		font-size: 2.7rem;
+	}
+	.bullet {
+		font-size: 2.5rem;
+	}
+	.youtube-link {
+		font-size: 2.4rem;
+	}
+}
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+		width: 900px;
+	}
+	.hyperlink-text {
+		font-size: 3rem;
+	}
+	.bullet {
+		font-size: 2.8rem;
+	}
+	.youtube-link {
+		font-size: 2.5rem;
+	}
+}
+
+/* YOUTUBE EXCLUSIVE QUERIES */
+@media (max-width: 600px) {
+	.youtube-video iframe {
+		width: 100%;
+	}
+}
+
+@media (min-width: 601px) {
+	.youtube-video iframe {
+		width: 560px;
+	}
+}
